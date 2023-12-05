@@ -219,3 +219,31 @@
 //     x = x*x
 // })()
 // capturedClosure()
+//====================================================================
+
+// (function () {
+//     "use strict";
+//     document.addEventListener('click', () => console.log(this))
+// })();
+
+// ======================================================================
+
+// let getTaskId = () => {
+//     id: return 1
+// };
+// console.log(getTaskId())
+
+// ===================================================================
+
+// let task = {
+//     id: 123,
+//     done: function () {
+//         return () => console.log(this.id)
+//     }
+// }
+// let anotherTask = {
+//     id: 987
+// }
+// task.done().bind(anotherTask)();
+
+// ===================================================================
