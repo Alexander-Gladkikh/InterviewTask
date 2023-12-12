@@ -44,31 +44,25 @@
 //  function makeCounter(start) {
 //     let count = start;
 //
-//      makeCounter.increase = function increase () {
-//         count += 1
-//          console.log(count)
+//      this.increase = function () {
+//         return count += 1
 //     }
-//      makeCounter.decrease = function decrease () {
-//          count -= 1
-//          console.log(count)
+//      this.decrease = function () {
+//         return count -= 1
 //      }
-//      makeCounter.reset = function reset () {
-//          count = 0
-//          console.log(count)
+//      this.reset = function () {
+//          return count = 0
 //      }
-//      makeCounter.set = function set (value) {
-//          count = value
-//          console.log(count)
+//      this.set = function  (value) {
+//          return count = value
 //      }
-//      console.log(count)
 // }
 //
-// const counter = makeCounter
-// counter(9)
-// counter.increase()
-// counter.decrease()
-// counter.reset()
-// counter.set(100)
+// const counter = new makeCounter(9)
+// console.log(counter.increase())
+// console.log(counter.decrease())
+// console.log(counter.reset())
+// console.log(counter.set(100))
 
 // =====================================================================================
 
